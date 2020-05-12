@@ -1,0 +1,72 @@
+*Quando arquivo de estilo crescer muito passe-o para um arquivo separado.
+
+Selecione style e jogue-o para uma pasta de estilos, na qual ira lidar com todos os estilos da pagina, assim nao sera necessario editalo de um em um.
+
+*Primeira coisa a fazer em um arquivo css e usar o @charset "UTF-8".
+*Segunda cole o estyle anterior.
+*Crie um <link rel="stylesheet" type="text/css" href="PASTA/NOMEDOARQUIVO> no lugar de style, 
+
+ <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+
+----------------estilo-css------------------------------------------------------------------------------------------------
+
+@charset "UTF-8";
+
+body {
+    background-color:rgb(24, 24, 24);
+    color:rgb(255, 255, 255)
+}
+p {
+    text-align: justify;
+    text-indent: 20px;
+}
+
+ ------------Formatacao-de-imagens-com-determinada-class------------------------------------------------------------------
+
+*Va ate o  <figure> da imagem, e defina sua <figure class="NAME">
+*No css digite figure.nomedaclass {} e defina a formatacao de de todas as imagens da determinada class
+
+/* Formatacao da imagem da determinada class */
+
+figure.className {
+    position: relative; Posicao relativa de acordo com o codigo se nao colocado o figcaption ficara fora da imagem da legenda.
+    border: 4px solid red; (Largura da borda, tipo, cor)
+    Box-shadow:  1px 1px 2px  black;  Sombra: (px1=Vertical, px2=Horizontal,px3=Espalhamento, cor)
+}
+
+/* Toda figura de determinada class do tipo img vai ter a seguinte formatacao.
+
+figure.className img {
+    width: 100%;   Largura 100%
+    height: 100%   Altura 100%
+}
+
+/*Toda figura de determinada class tera a legenda nessa determinada formatacao*/
+
+figure.className figcaption {
+    opacity: 0; 
+    Position: absolute; Posiçao absoluta dentro da borda.
+    top:0px   
+    background-color: rgba(0,0,0,0.4) ;   Coloca transparencia na legenda.
+    color: white;   Cor da fonte da legenda
+    width: 100%;   Largura 100%  da transparencia da legenda
+    height: 100%;  Altura 100%  da transparencia da legenda
+    padding; 10px;  Espaco antes da legenda
+    box-sizing: border-box; Cria um box dentro da borda.
+    transition: opacity 1s; Transicao de 1s para exibir/esconder.
+}
+
+/* Efeito de sobreposicao quando o mause passa por cima.*/
+
+figure.className:hover figcaption{
+    opacity: 1; Quando mause estiver em cima opacidae da legenda vai para 1
+
+}
+
+
+
+
+
+
+
+
