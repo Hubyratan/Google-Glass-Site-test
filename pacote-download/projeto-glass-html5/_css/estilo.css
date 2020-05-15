@@ -1,12 +1,19 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+@font-face{
+   font-family: 'FonteLogo';
+   src: url("../_fonts/bubblegum-sans-regular.otf")
+}
+
 body {
     background-color:rgb(24, 24, 24);
     color:rgb(255, 255, 255)
 }
 
 div#interface {
-    width: 1050px;
+    width: 1200px;
     background-color: #4D4D4D;
     margin: -20px auto 0px auto;
     box-shadow: 0px 0px 10px #3A3A3A ;
@@ -21,9 +28,33 @@ p {
 header#cabecalho  img#icone {
     position: absolute;
     top: 90px;
-    left: 1000px;
+    left: 1030px;
 }
 
+header#cabecalho img#logo {
+    width: 270px;
+    position: relative;
+    top: -170px;
+    left: 30px;
+}
+
+header#cabecalho {
+    border-bottom: 1px white solid;
+    height: 50px;
+} 
+
+
+header#cabecalho h1 {
+    display: none;
+}
+
+header#cabecalho h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20pt;
+    padding: -1px;
+    margin-top: 130px;
+
+}
 
 /*Formatação de imagens com legenda*/
 
@@ -66,14 +97,14 @@ nav#menu ul{
     text-transform: uppercase;
     position: absolute;
     top: 0px;
-    left: 580px
+    left: 550px
 }
 
 nav#menu li {
      display: inline-block;
      background-color: #3A3A3A;
-     padding: 10px;
-     margin: 2px;
+     padding: 16px;
+     margin: 6px;
      transition: background-color 1s;
 }
 
@@ -95,3 +126,25 @@ nav#menu a {
 nav#menu a:hover {
     color: rgb(43, 43, 43);
 }
+
+section#corpo {
+    display: block;
+    width: 700px;
+    float: left;
+    border-right: 1px solid white;
+    padding-right: 25px;
+}
+
+aside#lateral {
+    display: block;
+    width: 450px;
+    float: right;
+}
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid white;
+}
+ footer#rodape P {
+     text-align: center;
+ }
