@@ -6,15 +6,24 @@ body {
 }
 
 div#interface {
-    width: 800px;
+    width: 1050px;
     background-color: #4D4D4D;
     margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px #3A3A3A ;
+    padding: 10px 10px 10px 10px;
 }
 
 p {
     text-align: justify;
     text-indent: 20px;
 }
+
+header#cabecalho  img#icone {
+    position: absolute;
+    top: 90px;
+    left: 1000px;
+}
+
 
 /*Formatação de imagens com legenda*/
 
@@ -56,8 +65,8 @@ nav#menu ul{
     list-style: none;
     text-transform: uppercase;
     position: absolute;
-    top: 20px;
-    left: 700px
+    top: 0px;
+    left: 580px
 }
 
 nav#menu li {
@@ -69,7 +78,7 @@ nav#menu li {
 }
 
 nav#menu li:hover {
-    background-color: rgb(24, 24, 24);
+    background-color: #4D4D4D;
 
 }
 
@@ -84,5 +93,5 @@ nav#menu a {
 }
 
 nav#menu a:hover {
-    color: rgb(95, 95, 95)
+    color: rgb(43, 43, 43);
 }
