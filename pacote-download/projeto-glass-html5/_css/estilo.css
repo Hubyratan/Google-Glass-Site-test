@@ -135,6 +135,44 @@ section#corpo {
     padding-right: 25px;
 }
 
+table#tabela1 {
+    border: 1px solid  white;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabela1 td {
+    border: 1PX solid white;
+    padding: 7px;
+    text-align:;
+}
+
+table#tabela1 td.ce {
+    color: white;
+    background-color:  #3A3A3A;
+    font-weight: bolder;
+}
+
+table#tabela1 td.cd {
+    color: white;
+    background-color:  #3A3A3A;
+}
+
+table#tabela1 caption {
+    font-size: 15pt;
+    color: white;
+    font-weight: bolder;
+}
+
+table#tabela1 caption span {
+    display: block;
+    float: right;
+    color: white;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
 aside#lateral {
     display: block;
     width: 450px;
